@@ -1,4 +1,5 @@
 import "./style.scss";
+
 const rainIcon = "./assets/icons/cloud-rain.svg";
 const snowIcon = "./assets/icons/cloud-snow.svg";
 const sunIcon = "./assets/icons/sun.svg";
@@ -48,7 +49,7 @@ soundItems.addEventListener("click", (e) => {
 });
 
 soundRange.addEventListener("change", (e) => {
-    const value = e.target.value;
+    const { value } = e.target;
     if (current) {
         current.volume = value;
     }
